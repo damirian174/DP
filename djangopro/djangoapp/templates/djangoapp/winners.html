@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Победные номера лотереи</title>
+</head>
+<body>
+    <ul>
+        {% for win in win_num %}
+        <li>{{ win }}</li>
+        {% endfor %}
+    </ul>
+    {%if m in win_num%}
+        <p>Вы победитель</p>
+    {%else%}
+         <p>Вас нет в списке победителей</p>
+    {%endif%}
+</body>
+</html>
